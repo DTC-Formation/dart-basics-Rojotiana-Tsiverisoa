@@ -8,6 +8,6 @@ int factoriel(int n) {
 
 void main() {
   // calcul d'un factoriel d'un nombre
-  int nFactoriel = factoriel(4);
-  print(nFactoriel);
+  int nFactoriel = 4;
+  print("${nFactoriel}! = ${factoriel(nFactoriel)}");
 }
