@@ -1,7 +1,21 @@
+// int factoriel(int n) {
+//   int result = 1;
+//   if (n > 0) {
+//     for (int i = 1; i <= n; i++) {
+//       result *= i;
+//     }
+//   } else {
+//     result = 1;
+//   }
+//   return result;
+// }
+
 int factoriel(int n) {
   int result = 1;
-  for (int i = 1; i <= n; i++) {
-    result *= i;
+  if (n == 0) {
+    result = 1;
+  } else {
+    result = n * factoriel(n - 1);
   }
   return result;
 }
