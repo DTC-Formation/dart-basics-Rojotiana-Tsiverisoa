@@ -20,11 +20,23 @@ int factoriel(int n) {
   return result;
 }
 
+// int puissance(int n, int exposant) {
+//   int result = 1;
+//   for (int i = 1; i <= exposant; i++) {
+//     result *= n;
+//   }
+//   return result;
+// }
+
 int puissance(int n, int exposant) {
-  int result = 1;
-  for (int i = 1; i <= exposant; i++) {
-    result *= n;
+  int result;
+
+  if (exposant == 0)
+    result = 1;
+  else {
+    result = n * puissance(n, exposant - 1);
   }
+
   return result;
 }
 
